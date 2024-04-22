@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 6px;
+            color: #333333;
+        }
+
+        input {
+            width: calc(100% - 40px);
+            /* Ajuste para tener en cuenta el padding del botón */
+            padding: 8px;
+            margin-bottom: 12px;
+            border: 1px solid #cccccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            width: 100%;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Editar Usuario</h1>
+    <form action="http://localhost:3000/users/6620ae18beaefc3078f4ff16/edit?" method="POST">
+        <label for="autorizacion">Autorizacion:</label>
+        <input type="text" id="autorizacion" name="autorizacion" value="">
+        <button type="submit">Guardar cambios</button>
+    </form> -->
+    <h1>Autorizacion</h1>
+    <form action="http://localhost:3000/users/6620ae18beaefc3078f4ff16/edit?" method="POST">
+        <!-- <label for="autorizacion">Autorizacion:</label> -->
+        <input type="radio" id="autorizacion" name="autorizacion" value="True" checked>
+        <label for="autorizado">Autorizado</label>
+        <input type="radio" id="no_autorizacion" name="autorizacion" value="False">
+        <label for="no_autorizacion">No Autorizado</label>
+        <button type="submit">Guardar cambios</button>
+    </form>
+</body>
+
+</html>
