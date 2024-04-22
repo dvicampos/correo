@@ -19,8 +19,8 @@ fs.readFile('plantilla.html', 'utf8', (err, htmlData) => {
     // Configura los detalles del correo electrónico con el contenido del archivo HTML
     let mailOptions = {
         from: 'davidar2200@gmail.com',
-        to: 'dvicamp@gmail.com',
-        subject: '¡Hola desde JavaScript!',
+        to: 'contraloria@rexxai.com',
+        subject: '¡Favor de confirmar o denegar el pago!',
         html: htmlData
     };
 
